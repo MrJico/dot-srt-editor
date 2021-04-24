@@ -1,0 +1,21 @@
+{
+  "edited": "<b>✅ Edited</b>",
+  "empty_line": "<b>** EMPTY LINE **</b>",
+  "end_of_file": "<b>You have reached end of the file.</b>",
+  "file_does_not_exist": "<b>❌ That file does not exist</b>",
+  "file_exists": "<b>❌ A file with this name exists</b>",
+  "give_file_name": "<b>Give me a file name.</b>",
+  "give_line_number": "<b>Give me a line number.</b>",
+  "line_info": "#️⃣ <b>Line</b>: {}\n🕔 <b>Start</b>: {}",
+  "line_x_does_not_exist": "<b>❌ Line {} does not exist</b>",
+  "moved_to_line_x": "<b>✅ Moved to line {}</b>",
+  "no_file_is_opened": "<b>❌ No file is opened</b>",
+  "no_results_found": "<b>No results were found.</b>",
+  "one_result_found": "<b>One result was found.</b>",
+  "opened": "<b>✅ Opened</b>",
+  "provide_search_query": "<b>Provide a search query.</b>",
+  "showing_first_ten_results": "<b>Showing first 10 results.</b>",
+  "uploaded": "<b>✅ Uploaded</b>",
+  "use_button_to_open": "<b>Use the button below to open it.</b>",
+  "x_results_found": "<b>{} results were found.</b>"
+}
