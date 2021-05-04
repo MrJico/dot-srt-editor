@@ -17,5 +17,8 @@
   "showing_first_ten_results": "<b>Showing first 10 results.</b>",
   "uploaded": "<b>✅ Uploaded</b>",
   "use_button_to_open": "<b>Use the button below to open it.</b>",
-  "x_results_found": "<b>{} results were found.</b>"
+  "x_results_found": "<b>{} results were found.</b>",
+  "usage_of_new_command": "Usage: /new [start_time] [end_time]\nExample: /new 000:001:000.000 000:001:070.000",
+  "invalid_time_provided": "<b>❌ One of the provided times is not valid</b>",
+  "line_added": "<b>✅ The line was created</b>"
 }

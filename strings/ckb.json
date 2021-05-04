@@ -17,5 +17,8 @@
   "showing_first_ten_results": "<b>یەکەم 10 ئەنجام نیشان دەدرێت.</b>",
   "uploaded": "<b>✅ بەرزکرایەوە</b>",
   "use_button_to_open": "<b>دوگمەکەی خوارەوە بەکاربێنە بۆ کردنەوەی.</b>",
-  "x_results_found": "<b>{} ئەنجام دۆزرانەوە.</b>"
+  "x_results_found": "<b>{} ئەنجام دۆزرانەوە.</b>",
+  "usage_of_new_command": "بەکارهێنان:\n/new [start_time] [end_time]\nنموونە:\n/new 000:001:000.000 000:001:070.000",
+  "invalid_time_provided": "<b>❌ یەک لە کاتە پێدراوەکان دروست نییە</b>",
+  "line_added": "<b>✅ ئەم هێڵە دروست کرا</b>"
 }
