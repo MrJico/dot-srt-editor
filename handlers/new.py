@@ -23,12 +23,7 @@ def new(update: Update, context: CallbackContext):
         update.effective_message.reply_text(get('invalid_time_provided'))
         return
     file = pysrt.open(context.chat_data['file'], encoding='UTF-8')
-    file.append(
-        pysrt.srtitem.SubRipItem(
-            start=pysrt.srttime.SubRipTime.from_string(start),
-            end=pysrt.srttime.SubRipTime.from_string(end)
-        )
-    )
+    file.append(pysrt.srtitem.SubRipItem(start=start, end=end))
     file.clean_indexes()
     file.save(context.chat_data['file'], encoding='UTF-8')
     context.chat_data['line'] = 0
