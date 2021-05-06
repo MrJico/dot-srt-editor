@@ -52,6 +52,7 @@ python main.py
 | --------- | -------------------------------------------------- |
 | /prev     | moves to the previous line                         |
 | /next     | moves to the next line                             |
+| /new      | add a new line                                     |
 | /line X   | moves to line X                                    |
 | /search X | searches for X and returns first 10 results        |
 | /empty    | makes the current line empty                       |
