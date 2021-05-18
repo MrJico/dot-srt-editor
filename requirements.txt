@@ -1,3 +1,4 @@
 pysrt
 python-dotenv
 python-telegram-bot
+jinja2
