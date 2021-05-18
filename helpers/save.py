@@ -15,12 +15,7 @@ def get_to_save(string: str):
 
     for var in vars:
         if var.startswith('c_'):
-            color = var[2:]
-
-            if color.isnumeric():
-                color = '#' + color
-
-            kwargs[var] = f'<span style="color: {color};">'
+            kwargs[var] = f'<span style="color: #{var[2:]};">'
         elif var == ('end_c'):
             kwargs[var] = '</span>'
         else:
