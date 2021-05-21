@@ -22,6 +22,8 @@ def open(update: Update, context: CallbackContext):
     if not path.isfile(file_path):
         update.effective_message.reply_text(get('file_does_not_exist'))
         return
+    if not file_path.endswith('.srt'):
+        return
     context.chat_data['file'] = file_path
     context.chat_data['line'] = 0
     update.effective_message.reply_text(get('opened'))
