@@ -4,5 +4,6 @@ venv/
 .env
 .pre-commit-config.yaml
 
-files/
+!files/
+files/*
 data
