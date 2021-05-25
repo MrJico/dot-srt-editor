@@ -1,27 +1,19 @@
+import re
 from html import escape
-from jinja2 import Template, Environment, meta
 
 
 def get_to_save(string: str):
-    string = escape(string)
-    env = Environment()
-    ast = env.parse(string)
-    vars = meta.find_undeclared_variables(ast)
+    match_list = re.findall(
+        r'(<#([aA-zZ]+|[aA-fF0-9]{6})#(\s*[\w\s]+\s*)>)', string, flags=re.UNICODE,
+    )
 
-    if 'end_c' not in vars:
+    if match_list:
+        for match in match_list:
+            color = match[1]
+            text = escape(match[2].strip())
+            colored = f'<span style="color: #{color};">{text}</span>'
+            string = string.replace(match[0], colored)
+
         return string
 
-    kwargs = {}
-
-    for var in vars:
-        if var.startswith('c_'):
-            kwargs[var] = f'<span style="color: #{var[2:]};">'
-        elif var == ('end_c'):
-            kwargs[var] = '</span>'
-        else:
-            kwargs[var] = '{{' + var + '}}'
-
-    if 'c_' in kwargs:
-        return string
-
-    return Template(string).render(kwargs)
+    return string.strip()

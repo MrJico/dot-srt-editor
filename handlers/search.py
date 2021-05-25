@@ -37,7 +37,10 @@ def search(update: Update, context: CallbackContext):
         return
     update.effective_message.reply_text(
         text='\n'.join(
-            [f'<b>{html.escape(result[1])}</b>\n└ {result[0]}' for result in results[:10]],
+            (
+                f'<b>{html.escape(result[1])}</b>\n└ {result[0]}'
+                for result in results[:10]
+            ),
         ),
         reply_markup=ReplyMarkup.Remove,
     )

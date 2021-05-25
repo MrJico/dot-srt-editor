@@ -14,7 +14,9 @@ from strings import get
 @file
 def edit(update: Update, context: CallbackContext):
     file = pysrt.open(context.chat_data['file'], encoding='UTF-8')
-    file[context.chat_data['line']].text = get_to_save(update.effective_message.text)
+    file[context.chat_data['line']].text = get_to_save(
+        update.effective_message.text,
+    )
     file.save(context.chat_data['file'], encoding='UTF-8')
     update.effective_message.reply_text(
         text=get('edited'),
