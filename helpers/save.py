@@ -4,8 +4,9 @@ from html import escape
 
 def get_to_save(string: str):
     match_list = re.findall(
-        r"(<#([aA-zZ]+|[aA-fF0-9]{6})#(\s*[\w\s]+\s*)>)", string, flags=re.UNICODE
+        r'(<#([aA-zZ]+|[aA-fF0-9]{6})#(\s*[\w\s]+\s*)>)', string, flags=re.UNICODE,
     )
+
     if match_list:
         for match in match_list:
             color = match[1]

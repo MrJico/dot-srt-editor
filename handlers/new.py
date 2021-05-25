@@ -1,6 +1,5 @@
-import pysrt
-import pysrt.srttime
 import pysrt.srtitem
+import pysrt.srttime
 from telegram import Update
 from telegram.ext import CallbackContext
 from telegram.ext import CommandHandler
