@@ -63,4 +63,5 @@ python main.py
 - Hama Shareef
 - Sivar Mhamad
 - Ara Walker
+- Hawar Qahar
 - Roj Serbest
